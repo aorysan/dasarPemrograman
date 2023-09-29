@@ -1,6 +1,8 @@
 /**
  * Latihan84
  */
+package src;
+
 public class Latihan84 {
 
     public static void main(String [] args){
