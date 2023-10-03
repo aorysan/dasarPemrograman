@@ -1,4 +1,4 @@
-package src;
+package jobSheet3.src;
 
 public class ContohTipeData06 {
     public static void main(String [] args) {

@@ -1,4 +1,4 @@
-package src;
+package jobSheet4.src;
 
 import java.util.Scanner;
 public class Gaji06 {

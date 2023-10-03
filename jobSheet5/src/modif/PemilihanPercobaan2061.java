@@ -1,3 +1,5 @@
+package jobSheet5.src.modif;
+
 import java.util.Scanner;
 public class PemilihanPercobaan2061 {
     public static void main(String[] args) {

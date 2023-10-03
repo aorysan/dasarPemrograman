@@ -1,4 +1,4 @@
-package src;
+package jobSheet3.src;
 
 /**
  * ContohVariabel06

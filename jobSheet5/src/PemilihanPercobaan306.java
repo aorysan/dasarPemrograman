@@ -1,4 +1,4 @@
-package src;
+package jobSheet5.src;
 
 import java.util.Scanner;
 public class PemilihanPercobaan306 {

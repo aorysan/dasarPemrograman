@@ -1,4 +1,4 @@
-package src;
+package jobSheet2.src;
 
 public class myFirstJavaGithub06 {
     public static void main(String[] args) {

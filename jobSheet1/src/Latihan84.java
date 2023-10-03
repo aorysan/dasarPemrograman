@@ -1,7 +1,7 @@
 /**
  * Latihan84
  */
-package src;
+package jobSheet1.src;
 
 public class Latihan84 {
 
