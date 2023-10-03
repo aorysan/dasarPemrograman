@@ -13,7 +13,6 @@ public class Pemilihan2Percobaan2063 {
         sudut2 = input06.nextFloat();
         System.out.println("Masukkan sudut ketiga : ");
         sudut3 = input06.nextFloat();
-        input06.close();
         
         float totalSudut=sudut1+sudut2+sudut3;
 
@@ -37,5 +36,7 @@ public class Pemilihan2Percobaan2063 {
         } else {
                 System.out.println("Bukan Segitiga");
             }
+            
+        input06.close();
     }
 }

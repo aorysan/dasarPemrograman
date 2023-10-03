@@ -13,10 +13,9 @@ public class Pemilihan2Percobaan2062 {
         sudut2 = input06.nextFloat();
         System.out.println("Masukkan sudut ketiga : ");
         sudut3 = input06.nextFloat();
-        input06.close();
         
         float totalSudut=sudut1+sudut2+sudut3;
-
+        
         /**if (totalSudut == 180) {
             if((sudut1 == 90) || (sudut2 == 90) || (sudut3 == 90)) {
                 System.out.println("Segitiga tersebut adalah segitiga siku-siku");
@@ -24,7 +23,7 @@ public class Pemilihan2Percobaan2062 {
                 System.out.println("Segitiga tersebut bukan segitiga siku-siku");
             } 
         } else {
-                System.out.println("Bukan Segitiga");
+            System.out.println("Bukan Segitiga");
             }*/
 
         //Segitiga sama sisi
@@ -37,5 +36,7 @@ public class Pemilihan2Percobaan2062 {
         } else {
                 System.out.println("Bukan Segitiga");
             }
+        
+        input06.close();
     }
 }
