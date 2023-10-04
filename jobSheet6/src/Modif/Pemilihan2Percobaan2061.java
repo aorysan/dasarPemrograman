@@ -16,27 +16,21 @@ public class Pemilihan2Percobaan2061 {
         
         float totalSudut=sudut1+sudut2+sudut3;
         
-        /**if (totalSudut == 180) {
-         if((sudut1 == 90) || (sudut2 == 90) || (sudut3 == 90)) {
-             System.out.println("Segitiga tersebut adalah segitiga siku-siku");
-            } else {
-                System.out.println("Segitiga tersebut bukan segitiga siku-siku");
-            } 
-        } else {
-            System.out.println("Bukan Segitiga");
-        }*/
-        
-        //Segitiga sama kaki
         if (totalSudut == 180) {
-            if((sudut1 == sudut2) || (sudut2 == sudut3)) {
-                System.out.println("Segitiga tersebut adalah segitiga sama kaki");
+            if((sudut1 == 90) || (sudut2 == 90) || (sudut3 == 90)) {
+             System.out.println("Segitiga tersebut adalah segitiga siku-siku");
+                } else if ((sudut1 == sudut2) || (sudut2 == sudut3)) {
+                    System.out.println("Segitiga tersebut adalah segitiga sama kaki");
+                } else if ((sudut1 != sudut2) && (sudut2 != sudut3)) {
+                    System.out.println("Segitiga tersebut adalah segitiga sembarang");
+                } else if ((sudut1 == sudut2) && (sudut2 == sudut3)) {
+                    System.out.println("Segitiga tersebut adalah segitiga sama sisi");
+                }
             } else {
-                System.out.println("Segitiga tersebut bukan segitiga sama kaki");
-            } 
-        } else {
-                System.out.println("Bukan Segitiga");
+            System.out.println("Bukan Segitiga");
             }
-            
+
         input06.close();
         }
-}
+
+    }
