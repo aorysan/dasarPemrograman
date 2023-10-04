@@ -10,10 +10,10 @@ public class Pemilihan2Percobaan1061 {
         tahun = input06.nextInt();
         
         if ((tahun % 4) == 0) {
-            if(tahun == 2100) {
-                System.out.println("Bukan tahun kabisat");
-            } else {
+            if((tahun % 100) != 0) {
                 System.out.println("Merupakan tahun kabisat");
+            } else {
+                System.out.println("Bukan tahun kabisat");
             }
         } else {
             System.out.println("Bukan tahun kabisat");
