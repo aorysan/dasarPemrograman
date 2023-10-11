@@ -1,7 +1,7 @@
-package jobSheet7.src;
+package jobSheet7.src.modif;
 
 import java.util.*;
-public class WhileGaji06 {
+public class WhileGaji061 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -28,6 +28,10 @@ public class WhileGaji06 {
                 gajiLembur = jumlahJamLembur * 100000;
             } else if (jabatan.equalsIgnoreCase("karyawan")) {
                 gajiLembur = jumlahJamLembur * 75000;
+            } else {
+                System.out.println("Jabatan invalid");
+                i--;
+                continue;
             }
 
             totalGajiLembur += gajiLembur;
