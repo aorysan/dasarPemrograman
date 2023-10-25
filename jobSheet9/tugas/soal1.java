@@ -1,29 +1,42 @@
 package jobSheet9.tugas;
 
+import java.util.Scanner;
+
 public class soal1 {
     public static void main(String[] args) {
-        
-        int bil[] = {20, 40, 30, 10, 50};
-        int average,total=0, temp = 0;
+    Scanner input = new Scanner(System.in);
 
-        for (int i = 0; i < bil.length; i++) {
-            for (int j = 1; j < bil.length - i; j++) {
-                if (bil[j-1] > bil[j]) {
-                    temp = bil[j];
-                    bil[j] = bil[j-1];
-                    bil[j-1] = temp;
-                }
-            }
-        }
-        for (int i = 0; i < bil.length; i++) {
-            System.out.println(bil[i]);
-            total += bil[i];
+    System.out.print("Masukkan jumlah elemen : " );
+    int jml = input.nextInt();
+    int[] array = new int[jml];
+
+    for (int i = 0; i < jml; i++) {
+        System.out.print("Masukkan elemen ke-" + (i + 1) +" : " );
+        array[i] = input.nextInt();
+    }
+
+    int nilaiTertinggi = array[0];
+    int nilaiTerendah = array[0];
+    int jumlah = array[0];
+
+    for (int i = 1; i < jml; i++) {
+        if (array[i] > nilaiTertinggi) {
+        nilaiTertinggi = array[i];
         }
 
-        System.out.println("Nilai terkecilnya adalah : " + (bil[bil.length-1]));
-        System.out.printf("Nilai terbesarnya adalah : %d", bil[0]);
-        
-        average = total/bil.length;
-        System.out.printf("\nRata-rata dari nilai-nilai tersebut adalah : %d", average);
+        if (array[i] < nilaiTerendah) {
+        nilaiTerendah = array[i];
+        }
+
+        jumlah += array[i];
+    }
+
+    double rataRata = (double) jumlah / jml;
+
+    System.out.println("Nilai tertinggi: "+ nilaiTertinggi);
+    System.out.println("Nilai terendah: "+ nilaiTerendah);
+    System.out.println("Nilai rata-rata: "+ rataRata);
+
+    input.close();
     }
 }
