@@ -1,4 +1,4 @@
-package jobSheet9;
+package jobSheet9.src;
 
 public class BubbleSortExample06 {
     public static void main(String[] args) {

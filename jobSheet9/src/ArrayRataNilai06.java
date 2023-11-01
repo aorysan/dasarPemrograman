@@ -1,4 +1,4 @@
-package jobSheet9;
+package jobSheet9.src;
 
 import java.util.*;
 public class ArrayRataNilai06 {
