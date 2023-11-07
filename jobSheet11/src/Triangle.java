@@ -15,6 +15,7 @@ public class Triangle {
                 System.out.println("*");
                 j++;
             }
+            System.out.println();
             i++;
         }
         sc.close();
