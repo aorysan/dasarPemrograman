@@ -16,13 +16,16 @@ public class NestedLoop_2341720084 {
             }
             System.out.println();
         }
-        for(int i = 0; i < temps.length; i++) {
-            System.out.println("Kota ke-" + (i+1) + " : ");
-            for(int j = 0; j < temps[0].length; j++) {
-                System.out.print(temps[i][j] + " ");
+
+        int kota = 0;
+        for(double temp[] : temps) {
+            System.out.println("Kota ke-" + kota++);
+            for(double hari : temp) {
+                System.out.print(hari + " ");
             }
             System.out.println();
         }
+        System.out.println();
         sc.close();
     }
 }
