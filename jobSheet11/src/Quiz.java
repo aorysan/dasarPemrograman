@@ -13,10 +13,17 @@ public class Quiz {
             int number = random.nextInt(10)+1;
             boolean success = false;
             do {
-                System.out.println("Tebak angka (1-10) : ");
+                System.out.print("Tebak angka (1-10) : ");
                 int answer = input.nextInt();
                 input.nextLine();
-                success = (answer==number);
+
+                if (number < answer) {
+                    System.out.println("Lebih rendah");
+                } else if (number > answer) {
+                    System.out.println("Lebih tinggi");
+                } else {
+                    success = (answer==number);
+                }
             } while (!success);
             System.out.println("Apakah Anda ingin mengulang permainan (y/Y)?");
             menu = input.nextLine().charAt(0);
