@@ -2,6 +2,7 @@ import java.util.*;
 public class Percobaan2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
         System.out.print("Bilangan yang dihitung : ");
         int bilangan = sc.nextInt();
         System.out.print("Pangkat : ");
